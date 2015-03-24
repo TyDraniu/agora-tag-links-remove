@@ -7,10 +7,10 @@ var n = anchors.length;
 //console.log("Agora Bad Links " + n);
 try {
 	for(i = 0; i < n; i++) {
-        //console.log(anchors[0].outerHTML);
-		anchors[0].outerHTML = anchors[0].innerHTML;
-    } 
+		//console.log(anchors[0].outerHTML);
+		anchors[0].outerHTML = anchors[0].textContent;
+	} 
 } 
 catch(e) {  
-        console.exception(e.message);
+		console.exception(e.message);
     }
