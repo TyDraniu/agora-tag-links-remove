@@ -5,7 +5,7 @@ var pageMod = require("sdk/page-mod");
 var data = require("sdk/self").data;
 
 pageMod.PageMod({
-    include: ["*.sport.pl", "*.gazeta.pl", "*.gazeta.biz", "*.tokfm.pl", "*.gazetapraca.pl", "*.moto.pl", "*.wyborcza.pl", "*.wyborcza.biz", "*.wysokieobcasy.pl", "*.polygamia.pl", "*.deser.pl"],
-    contentScriptFile: data.url("script.js"),
+	include: ["*.sport.pl", "*.gazeta.pl", "*.gazeta.biz", "*.tokfm.pl", "*.gazetapraca.pl", "*.moto.pl", "*.wyborcza.pl", "*.wyborcza.biz", "*.wysokieobcasy.pl", "*.polygamia.pl", "*.deser.pl"],
+	contentScriptFile: data.url("script.js"),
 	contentScriptWhen: "ready"
 });
